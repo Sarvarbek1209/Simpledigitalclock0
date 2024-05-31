@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simpledigitalclock0</string>
+    <string name="clokc">00:00:00</string>
+    <string name="date">00.00.0000</string>
+    <string name="date1">00.00.0000</string>
+    <string name="_clock">00:00:00</string>
+    <string name="_00_00_0000">00.00.0000</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="week">week</string>
+</resources>

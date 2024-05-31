@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Верхняя линия -->
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Нижняя линия -->
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Левая линия -->
+    <View
+        android:id="@+id/leftLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Правая линия -->
+    <View
+        android:id="@+id/rightLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="598dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/digital_7"
+        android:format24Hour="HH:mm:ss"
+        android:gravity="center"
+        android:onClick="changeClockColor"
+        android:text="@string/_00_00_00"
+        android:textColor="@color/white"
+        android:textSize="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949">
+
+        <TextClock
+            android:id="@+id/dataTextClock"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity=""
+            android:layout_marginBottom="76dp"
+            android:fontFamily="@font/digital_7"
+            android:format12Hour="dd.MM.yyyy"
+            android:format24Hour="dd.MM.yyyy"
+            android:gravity="center_vertical"
+            android:text="@string/_00_00_0000"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="386dp"
+            android:layout_height="76dp"
+            android:layout_gravity="left"
+            android:fontFamily="@font/lcd_gra"
+            android:gravity="center_vertical"
+            android:text="Понедельник"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541"
+        app:srcCompat="@drawable/sarvar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
