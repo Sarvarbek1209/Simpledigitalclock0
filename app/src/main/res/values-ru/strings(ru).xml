@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sunday">Воскресенье</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+
+    <string name="alarm_set_message">Будильник установлен на %1$d:%2$d</string>
+
+
+
+    <string name="command_received">Команда получена: %1$s</string>
+    <string name="hello_response">Привет! на какое время установить будильник?</string>
+
+    <string name="unknown_command">Извините, я не понял вашу команду</string>
+
+</resources>
