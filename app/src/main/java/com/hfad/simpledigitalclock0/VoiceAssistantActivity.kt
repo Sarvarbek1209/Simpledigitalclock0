@@ -1,4 +1,4 @@
-package com.hfad.simpledigitalclock0
+ package com.hfad.simpledigitalclock0
 
 import android.content.Intent
 import android.os.Bundle
@@ -20,6 +20,8 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import java.util.regex.Pattern
 import android.icu.util.Calendar
+import com.hfad.simpledigitalclock0.AlarmReceiver
+import com.hfad.simpledigitalclock0.R
 
 
 class VoiceAssistantActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
